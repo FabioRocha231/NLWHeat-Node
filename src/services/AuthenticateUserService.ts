@@ -1,6 +1,9 @@
 import axios from "axios";
 import prismaClient from "../prisma";
 import { sign } from "jsonwebtoken"
+
+
+
 /**
  * Receber code(string)
  * Recuperar o acces_token no github
@@ -10,8 +13,6 @@ import { sign } from "jsonwebtoken"
  * ----- NAO = Cria no DB, Gera um token
  * Retornar o token com as infos do user
  */
-
-
 
 
 interface IAccessTokenResponse {
